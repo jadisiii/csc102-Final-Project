@@ -1,0 +1,146 @@
+/* This is a Comment - Ray Arbizu */
+
+body
+{
+    background-image: linear-gradient(#164863, #DDF2FD);
+    background-repeat: no-repeat;
+}
+
+.topnav{
+    overflow: hidden;
+    background-color: #131e41;
+}
+
+.topnav a{
+    float: left;
+    color: #427D9D;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 17px;
+}
+
+.topnav a:hover{
+    background-color: #9BBEC8;
+    color: #131e41;
+}
+
+.topnav button {
+    float: right;
+    overflow: hidden;
+    background-color: #131e41;
+    color: #427D9D;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 17px;
+    border: solid;
+    border-width: 1px;
+    border-radius: 0%;
+    margin: 0%;
+}
+
+.topnav button:hover{
+    background-color: #9BBEC8;
+    color: #131e41;
+    border: solid;
+    border-width: 1px;
+    border-radius: 0%;
+    margin: 0%;
+}
+
+#imgDiv{
+    height: 500px;
+    width: 700px;
+}
+
+#header{
+    background-color: #164863;
+    padding: 10px;
+}
+
+nav{
+    height: 200px;
+    width: 200px;
+    float: left;
+    padding: 5px;
+    line-height: 30px;
+}
+
+h1
+{
+    color: aliceblue;
+    text-align: center;
+    text-decoration: underline;
+}
+
+h2
+{
+    color: #DDF2FD;
+}
+
+h3
+{
+    color: #DDF2FD;
+}
+
+p
+{
+    color: #DDF2FD;
+}
+
+button {
+    background-color: #0766AD;
+    color: #F3F3F3;
+    border-color: #C5E898;
+    border-radius: 25px;
+}
+
+button:hover {
+    background-color: #F3F3F3;
+    color: #0766AD;
+    border-color: #C5E898;
+    border-radius: 25px;
+}
+
+#instructions {
+    float: left;
+    padding-left: 20px;
+}
+
+#buttonsDiv {
+    float: left;
+    padding-top: 15px;
+    padding-left: 5px;
+}
+
+p.image{
+    margin-right: 200px;
+    align-self: center;
+}
+
+#memeImage{
+    margin-right: 200px;
+}
+    
+
+ol {
+    background: #164863;
+    padding: 20px;
+}
+
+ol li {
+    color: #ECF4D6;
+    padding: 5px;
+    background: #427D9D;
+    margin-left: 35px;
+}
+
+footer{
+    background-color: #090e1d;
+    text-align: center;
+    padding: 40px;
+}
+
+footer p{
+    color: #9BBEC8;
+}
+

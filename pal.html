@@ -1,0 +1,55 @@
+<!-- Ray Arbizu -->
+
+<!DOCTYPE html> <!-- Document type, part of template -->
+<html lang="en"> <!-- HTML doc opening tag, specifiying the English language -->
+<head> <!-- Header opening, mostly part of the template -->
+    <meta charset="UTF-8"> <!-- Part of the template -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- Part of the template -->
+    <script src="palScripts.js"></script>  <!-- This tells the HTML how to connect to the javascript file -->
+    <link rel="stylesheet" href="palStyles.css"> <!-- This tells the HTML how to connect to the CSS file -->
+    <link href="https://fonts.cdnfonts.com/css/adlam-display" rel="stylesheet"> <!-- This is a link to use the font -->
+    <title>CSC102 A3.1 - Palindrome Checker</title> <!-- Title show in the Web browser -->
+</head> <!-- Header closing tag -->
+<body> <!-- Webpage body opening -->
+
+    <!-- Topnav Bar -->
+    <div class="topnav" id="navbar">
+        <a class="active" href="memeMove.html">Home</a>
+        <a href="boards.html">Boards</a>
+        <a href="custInfo.html">Customer</a>
+        <a href="craps.html">Craps</a>
+        <a href="pal.html">Palindrome</a>
+        <button onclick="logoff()">Log Out</button>
+    </div>
+
+    <!-- This section is for the header and letter animation-->
+    <div class="header-wrapper">
+        <div class="animation" id="animatedText"> <!-- Begining div tag of animation of the word Palindrom -->
+            <span>P</span><span>a</span><span>l</span><span>i</span><span>n</span><span>d</span><span>r</span><span>o</span><span>m</span><span>e</span> <!-- Using Span to help animate the letters -->
+        </div> <!-- End div tag of animation of the word Palindrom -->
+        <div class="txtFever" id="feverText"> <!-- Begining div tag of animation of the word Fever -->
+            <span>Fever</span> <!-- Using Span to help animate the word FEVER -->
+        </div> <!-- End div tag of animation of the word Fever -->
+    </div>
+
+    <div class="inputPalindrom">
+        <h2> Enter a word below to check if it is a Palindrom</h2>
+        <form id="palindromInput" onsubmit="return false">
+            Enter word: <input type = "text" id = "palindromString"/>
+            <br><br>
+            <input type="submit" onclick="palindromCheck()"/>
+        </form>
+    </div>
+    <br><hr><br> <!-- Horizontal line with 2 line breaks -->
+    <div id="palCheck">
+        <div id="wordForward">Word Check Forward</div><br>
+        <div id="wordBackward">Word Check Backward</div><br>
+        <div id="wordResult">Result</div><br>
+        <div id="enterAnother"></div>
+    </div>
+    <br><hr><br>
+    <button onclick="reset()">Reset</button>
+    <nav></nav>
+</body> <!-- Closing body tag -->
+</html> <!-- Closing html tag -->
+

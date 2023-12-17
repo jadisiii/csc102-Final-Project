@@ -1,0 +1,61 @@
+<!-- 
+    Ray Arbizu 
+    Week 1 Assignment - The Foundation
+--> <!--This is a comment -->
+
+<!DOCTYPE html> <!-- Convays the doument type as html to the browser -->
+<html lang="en"> <!-- Open html tag, specifying the language type as English -->
+<head>  <!-- Header Opening -->
+    <meta charset="UTF-8">  <!-- Defines the Meta info Character Set -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- Defines Meta name and content -->
+    <script src="memeScript.js"></script>
+    <title>Meme Bouncing</title> <!-- The Title of the HTML document that shows in the web browsers tab -->
+    <link rel="stylesheet" href="memeStyle.css"/> <!-- Set the CSS file -->
+</head> <!-- Header Closing -->
+
+<body> <!-- The body of the HTML page opening, this is where the visible content of the page is written -->
+
+    <!-- NavBar -->
+    <div class="topnav" id="navbar">
+        <a class="active" href="memeMove.html">Home</a>
+        <a href="boards.html">Boards</a>
+        <a href="custInfo.html">Customer</a>
+        <a href="craps.html">Craps</a>
+        <a href="pal.html">Palindrome</a>
+        <button onclick="logoff()">Log Out</button>
+    </div>
+
+    <div id="header">
+        <h1>Meme Bouncing</h1> <!-- By default this is the largest heading type, heading 1 -->
+    </div>
+
+    <div id="buttonsDiv">
+        <button id="goButton" onclick="startMove();">Go</button>
+        <button id="stopButton" onclick="stopMove();">Stop</button>
+    </div>
+
+    <div id="instructions">
+        <p>Click the Go button to make the meme move and bounce, and click stop to stop the movement.</p>
+    </div>
+
+
+    <br> <!-- Line break -->
+
+    <div id="imgDiv">
+            <img id="memeImage" src="whenProgrammerIsReviewCodeMeme.png" alt="Programmer Reviews Code Meme"  style = "position:absolute; left:20px;top:200px; width: 200px;"/> <!-- Image Tag -->
+    </div>
+    <br> <!-- Line break -->
+
+    <!-- <nav>
+        <a href="index.html">Home</a>
+        <a href="boards.html">Boards</a>
+        <a href="http://www.uat.com">UAT</a>
+    </nav> -->
+    <br><br>
+
+    <footer>
+        <p>Copyright 2023 RLA</p>
+    </footer>
+
+</body> <!-- Closing tag for the HTML body of the document -->
+</html> <!-- Closing tag of the HTML document -->

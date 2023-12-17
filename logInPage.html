@@ -1,0 +1,72 @@
+<!-- Ray Arbizu -->
+
+<!DOCTYPE html> <!-- Document type, part of template -->
+<html lang="en"> <!-- HTML doc opening tag, specifiying the English language -->
+<head> <!-- Header opening, mostly part of the template -->
+    <meta charset="UTF-8"> <!-- Part of the template -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- Part of the template -->
+    <script src="loginScripts.js"></script>  <!-- This tells the HTML how to connect to the javascript file -->
+    <link rel="stylesheet" href="loginStyles.css"> <!-- This tells the HTML how to connect to the CSS file -->
+    <link href="https://fonts.cdnfonts.com/css/adlam-display" rel="stylesheet"> <!-- This is a link to use the font -->
+    <title>Palindrome Checker</title> <!-- Title show in the Web browser -->
+</head> <!-- Header closing tag -->
+<body> <!-- Webpage body opening -->
+    <div id="background-container"> <!-- Creates a Div wih the id of background-container so that I can use an image as a background -->
+
+        <!-- This section is for the header and letter animation-->
+        <div class="header-wrapper"> <!-- Opening Div for the header and animation -->
+            <div class="animation" id="animatedText"> <!-- Begining div tag of animation of the word User Input -->
+                <span>U</span><span>s</span><span>e</span><span>r</span><span> </span><span>L</span><span>o</span><span>g</span><span>o</span><span>n</span> <!-- Using Span to help animate the letters -->
+            </div> <!-- End div tag of animation of the word -->
+            <div class="txtFever" id="feverText"> <!-- Begining div tag of animation of the word Validation -->
+                <span>Validation</span> <!-- Using Span to help animate the word Validation -->
+            </div> <!-- End div tag of animation of the word Validation -->
+        </div> <!-- Closing div for the header-wrapper -->
+
+        <div class="container"> <!-- Opening div tag with the class of inputUserInfo, for CSS styling -->
+            <div class="instructions">
+                <h2>Enter First, and last name, followed by your zipcode</h2><br> <!-- H2 informational text to enter user input -->
+            </div>
+            <form id="userInfoInput" onsubmit="return false"> <!-- Opening form tag to creat the form and set the id as userInfoInput, with the onsubmit return as false -->
+                <div class="row">
+                    <div class="col-25">
+                        <label for="userFnameString">First Name</label>
+                    </div>
+                    <div class="col-75">
+                        <input type = "text" id = "userFnameString" required/> <!-- First name input field, that is requied to move on-->
+                    </div>
+                </div>
+
+                <div class="row">
+                    <div class="col-25">
+                        <label for="userLnameString">Last Name</label>
+                    </div>
+                    <div class="col-75">
+                        <input type = "text" id = "userLnameString" required/> <!-- Last name input field, that is requied to move on-->
+                    </div>
+                </div>
+                
+                <div class="row">
+                    <div class="col-25">
+                        <label for="zipcodeString">Zipcode</label>
+                    </div>
+                    <div class="col-75">
+                        <input type = "number" id = "zipcodeString" required/><br><br> <!-- Zipcode input field, that must be a number and is requied to move on-->
+                    </div>
+                </div>
+
+                <div class="row">
+                    <input type="submit" onclick="userInfoCheck()"/> <!-- input button that starts the userInfoCheck function on the scripts page -->
+                </div>
+            </form> <!-- Close Form tag -->
+        </div> <!-- Close div tag-->
+
+        <br> <!-- Line Break -->
+        <!-- <button onclick="reset()">Reset</button> -- button to reset the page, start the reset function on the script page when clicked -->
+    </div> <!-- Closeing div tag -->
+    <footer>
+        <p>Copyright 2023 RLA</p>
+    </footer>
+</body> <!-- Closing body tag -->
+</html> <!-- Closing html tag -->
+

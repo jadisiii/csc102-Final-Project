@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="custInfoCSS.css">
+    <script src="custInfoScript.js"></script>
+    <title>Customer Input</title>
+</head>
+<body>
+
+    <!-- NavBar -->
+    <div class="topnav" id="navbar">
+        <a class="active" href="memeMove.html">Home</a>
+        <a href="boards.html">Boards</a>
+        <a href="custInfo.html">Customer</a>
+        <a href="craps.html">Craps</a>
+        <a href="pal.html">Palindrome</a>
+        <button onclick="logoff()">Log Out</button>
+    </div>
+
+
+    <div id="header">
+        <header>
+            <h1> Customer's Info </h1>
+            <p>Enter the customer's Id, Name, Product and their concern, then click the Submit buttonw, and the info will show in the table below.</p>
+            <p>You must enter a number for the customer ID.</p>
+        </header>
+    </div>
+    <br><br>
+
+    <div id="inputDiv" class="container">
+        <form id="customerList" onsubmit="return false">
+            <div class="row">
+                <div class="col-25">
+                    <label for="cID">Customer ID</label>
+                </div> 
+                <div class="col-75">
+                    <input type="number" id="cID" placeholder="12345" required/>
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="col-25">
+                    <label for="cName">Customer Name</label>
+                </div>
+                <div class="col-75">
+                    <input type="text" id="cName" placeholder="John Doe"/>
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="col-25">
+                    <label for="sProduct">Product</label>
+                </div>
+                <div class="col-75">
+                    <input type="text" id="sProduct" placeholder="Product Name"/>
+                    <!-- <select id="sProduct" name="sProduct">
+                        <option value="widget">Widget</option>
+                        <option value="fidget">Fidget</option>
+                        <option value="gidget">Gidget</option>
+                        <option value="bob">Bob</option>
+                    </select> -->
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="col-25">
+                    <label for="cIssue">Subject</label>
+                </div>
+                <div class="col-75">
+                    <textarea id="cIssue" name="cIssue" placeholder="Customer's issue.."></textarea>
+                    <!-- <input type="text" id="cIssue" placeholder="Customer issue"/> -->
+                </div>
+            </div>
+
+            <div class="row">
+                <input type="submit" onclick="customerInfo()"/>
+            </div>
+        </form>
+    </div>
+    <br><br>
+    <div id="tableDiv">
+        <table id="tblCustomer">
+            <thead>
+                <th class="colID">Customer ID</th>
+                <th class="colName">Customer Name</th>
+                <th class="colProd">Product</th>
+                <th class="colIssue">Customer Issue</th>
+            </thead>
+
+            <tbody>
+                <!-- Rows will be added here -->
+            </tbody>
+
+            <!-- <tr id="trOne">
+                <td id="tr1col1"></td>
+                <td id="tr1col2"></td>
+                <td id="tr1col3"></td>
+                <td id="tr1col4"></td>
+            </tr> -->
+
+            <!-- <tr id="trTwo">
+                <td id="tr2col1"></td>
+                <td id="tr2col2"></td>
+                <td id="tr2col3"></td>
+                <td id="tr2col4"></td>
+            </tr>
+            <tr id="trThree">
+                <td id="tr3col1"></td>
+                <td id="tr3col2"></td>
+                <td id="tr3col3"></td>
+                <td id="tr3col4"></td>
+            </tr>
+            <tr id="trFour">
+                <td id="tr4col1"></td>
+                <td id="tr4col2"></td>
+                <td id="tr4col3"></td>
+                <td id="tr4col4"></td>
+            </tr>
+            <tr id="trFive">
+                <td id="tr5col1"></td>
+                <td id="tr5col2"></td>
+                <td id="tr5col3"></td>
+                <td id="tr5col4"></td>
+            </tr> -->
+        </table>
+    <br><br><br>
+    </div>
+    <footer>
+        <p>Copyright 2023 RLA</p>
+    </footer>
+</body>
+</html>

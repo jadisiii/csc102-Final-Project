@@ -1,0 +1,33 @@
+<!-- Ray Arbizu -->
+
+<!DOCTYPE html> <!-- Document type, part of template -->
+<html lang="en">  <!-- HTML doc opening tag, specifiying the English language -->
+<head> <!-- Header opening, mostly part of the template -->
+    <meta charset="UTF-8"> <!-- Part of the template -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- Part of the template -->
+    <script src="loginScripts.js"></script>  <!-- This tells the HTML how to connect to the javascript file -->
+    <link rel="stylesheet" href="loginStyles.css"> <!-- This tells the HTML how to connect to the CSS file -->
+    <link href="https://fonts.cdnfonts.com/css/adlam-display" rel="stylesheet"> <!-- This is a link to use the font -->
+    <title>Access Granted</title> <!-- Title show in the Web browser -->
+</head> <!-- Header closing tag -->
+<body> <!-- Webpage body opening -->
+    <div id="background-container"> <!-- Creates a Div wih the id of background-container so that I can use an image as a background -->
+        <div class="header-wrapper"> <!-- Opening Div for the header and animation -->
+            <div class="animation" id="animatedText"> <!-- Begining div tag of animation of the word Access -->
+                <span>A</span><span>c</span><span>c</span><span>e</span><span>s</span><span>s</span> <!-- Using Span to help animate the letters -->
+            </div> <!-- End div tag of animation of the word Access -->
+            <div class="txtFever" id="feverText"> <!-- Begining div tag of animation of the word -->
+                <span>Granted</span> <!-- Using Span to help animate the word FEVER -->
+            </div> <!-- End div tag of animation of the word Fever -->
+        </div> <!-- Closing div for the header-wrapper -->
+
+        <h1>You're In!</h1> <!-- H1 1 message-->
+        <br><hr><br> <!-- break, horizontal line, break -->
+        <h3>You have successfully entered the correct information!<br>You are granted access to this page.</h3> <!-- H3 Success message -->
+        <br> <!-- line break -->
+        <h4>You can click the 'Log Off' button to return to the User Validation page.</h4> <!-- H4 message that you can log off to return to the validation page -->
+        <br> <!-- line break -->
+        <button id="signoff" onclick="logOff();">Log Off</button> <!-- buttn that will run the logOff function on the scripts page, when clicked, and return to the validation page -->
+    </div> <!-- Closing div tag for the backgound-container -->
+</body> <!-- Closing tag for the body -->
+</html> <!-- Closing tag for the html document -->

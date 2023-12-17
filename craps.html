@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Craps Game</title>
+    <script src="crapsScripts.js"></script>
+    <link rel="stylesheet" href="crapsStyles.css">
+</head>
+<body>
+
+    <!-- NavBar -->
+    <div class="topnav" id="navbar">
+        <a class="active" href="memeMove.html">Home</a>
+        <a href="boards.html">Boards</a>
+        <a href="custInfo.html">Customer</a>
+        <a href="craps.html">Craps</a>
+        <a href="pal.html">Palindrome</a>
+        <button onclick="logoff()">Log Out</button>
+    </div>
+
+    <div id="header">
+        <h1>CRAPS</h1>
+    </div>
+
+    <!-- These are the instructions and explianation of the game, using the <p> or paragraph tag -->
+    <p>On the COME OUT, the PASS LINE wins on 7 or 11 and looses on 2, 3 and 12 (Craps).</p>
+    <p>If the dice is 4, 5, 6, 9, or 10, then the point is established.</p>
+    <p>Once the point is established, if the dice lands on 7 before landing on the point, the PASS LINE bet looses and the COME OUT starts over.</p>
+    
+    <!-- I have 3 div's in this one div so that I can position them as one unit.
+    The rollCounter shows how many dics rolls have been rolled per turn.
+    The Turn  -->
+    <div id="rollInfo">
+        <div id="rollCounter">The roll count is 0</div>
+        <div id="turn">This is the COME OUT Roll</div>
+        <div id="status">PASS LINE bet</div>
+    </div>
+
+    <!-- This div holds the images for the dice, and the space where it shows the dice roll animation.
+    When the button with the id 'rollButton' is pressed it triggers the roll function in the javascript,
+    it also sets the sound as the that will be played to the dice-roll.mp3 -->
+    <div id="rollingDice">
+        <div id="dice">
+            <img id="die1" src="Dice-1.png" alt="Die1">
+            <img id="die2" src="Dice-2.png" alt="Die2">
+        </div>
+        <br>
+        <button id="rollButton" onclick="roll()">Roll the Dice</button>
+        <audio id="clickSound" src="dice-roll.mp3"></audio>
+    </div>
+
+    <!-- This section is for the embeded audio to listen to music while you play 
+    It has the audio source pointing to the Ice_of_Phoenix.mp3 by Audiomachine. -->
+    <div id="audioMachine">
+        <p class="p2">Listen while you play.</p>
+        <audio controls>
+            <source src="Ice_of_Phoenix.mp3" type="audio/mpeg"> </source> 
+        </audio>
+        <p class="p3">Ice of Phoenix, by Audiomachine</p>
+    </div>
+
+    <!-- I have a couple of line breaks and an image of the Craps table, to visualize the game. 
+    Hopefully, at some point, I would like to include the ability to place bets on the image and see how they would play out visually -->
+    <br><br>
+    <img id="board" src="craps_table.png" alt="Craps Board">
+
+    <footer>
+        <p>Copyright 2023 RLA</p>
+    </footer>
+</body>
+</html>

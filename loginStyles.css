@@ -1,0 +1,191 @@
+/* Ray Arbizu */
+
+body {
+    background-image: linear-gradient(#164863, #DDF2FD);
+    background-repeat: no-repeat;
+    
+}
+
+#background-container {
+    width: 100%;
+    height: 85vh; /* Full height */
+    background-image: url('codingBackground.jpg'); /* image path */
+    background-size: cover; /* Cover the entire container */
+    background-position: center; /* Center the image */
+    background-repeat: no-repeat; /* Do not repeat the image */
+}
+
+h1{
+    font-family: 'ADLaM Display', sans-serif;
+    font-size: 56px;
+    color: #C5E898;
+    text-align: center;
+}
+
+h2 {
+    color: #164863;
+    text-align: center;
+}
+
+h3 {
+    font-size: 24px;
+    color: #F3F3F3;
+    text-align: center;
+}
+
+p {
+    color: #164863;
+}
+
+hr {
+    height: 2px;
+    background-color: aliceblue;
+    border: none;
+
+}
+
+#animatedText span {
+    opacity: 0;
+    transform: translateX(-50px);
+    transition: transform 0.5s, opacity 0.5s;
+}
+
+.animation {
+    font-family: 'ADLaM Display', sans-serif;
+    font-size: 56px;
+    color: #F3F3F3;
+    text-align: center;
+}
+
+.txtFever {
+    font-family: 'ADLaM Display', sans-serif;
+    font-size: 42px;
+    color: #07ad52;
+    text-align: center;
+}
+
+#feverText {
+    opacity: 0;
+    transform: translateX(30px);
+    transition: all 0.5s ease-out;
+}
+  
+.header-wrapper {
+    background-color: #164863;
+    padding: 10px;
+}
+  
+.inputUserInfo {
+    color: #C5E898;
+    font-family: 'ADLaM Display', sans-serif;
+    padding: 20px;
+}
+
+.inputUserInfo input[type="submit"] {
+    background-color: #0766AD;
+    color: #F3F3F3;
+    border-color: #C5E898;
+    border-radius: 25px;
+    padding: 20px;
+}
+
+.inputUserInfo input[type="submit"]:hover {
+    background-color: #F3F3F3;
+    color: #0766AD;
+    border-color: #C5E898;
+    border-radius: 25px;
+    padding: 25px;
+    transition: 0.4s;
+}
+
+
+button {
+    background-color: #0766AD;
+    color: #F3F3F3;
+    border-color: #C5E898;
+    border-radius: 25px;
+    padding: 20px;
+    margin-left: 20px;
+}
+
+button:hover {
+    background-color: #F3F3F3;
+    color: #0766AD;
+    border-color: #C5E898;
+    border-radius: 25px;
+    padding: 25px;
+    transition: 0.4s;
+}
+
+footer{
+    background-color: #090e1d;
+    text-align: center;
+    padding: 40px;
+}
+
+footer p{
+    color: #9BBEC8;
+}
+
+* {
+    box-sizing: border-box;
+  }
+    input[type=text], input[type=number], select, textarea {
+    width: 80%;
+    padding: 12px;
+    border: 1px solid #8dcadd;
+    border-radius: 4px;
+    resize: vertical;
+    }
+
+    label {
+    padding: 12px 12px 12px 0;
+    display: inline-block;
+    color: #164863;
+    font-weight: bold;
+    }
+
+
+    .container {
+    border-radius: 5px;
+    background-color: #d4e5f5;
+    padding: 20px;
+    }
+
+    input[type=button], input[type=submit] {
+        background-color: #0483aa;
+        border: none;
+        color: aliceblue;
+        padding: 16px 32px;
+        text-decoration: none;
+        margin: 4px 2px;
+        cursor: pointer;
+        border-radius: 4px;
+        float: right;
+    }
+    
+    input[type=submit]:hover {
+        background-color: aliceblue;
+        color: #0483aa;
+    }
+
+    .col-25 {
+    float: left;
+    width: 25%;
+    margin-top: 6px;
+    text-align: right;
+    }
+
+    .col-75 {
+    float: left;
+    width: 75%;
+    margin-top: 6px;
+    }
+
+    /* Clear floats after the columns */
+    .row::after {
+    content: "";
+    display: table;
+    clear: both;
+    }
+
